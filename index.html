@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Patient Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Patient Management System</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#patients">Patients</a></li>
+            <li><a href="#add-patient">Add Patient</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="patients">
+            <h2>Patient List</h2>
+            <input type="text" id="search" placeholder="Search patients by name">
+            <button id="search-button">Search</button>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Condition</th>
+                    </tr>
+                </thead>
+                <tbody id="patient-list">
+                    <!-- Patient data will be displayed here -->
+                </tbody>
+            </table>
+        </section>
+        <section id="add-patient">
+            <h2>Add Patient</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br><br>
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age"><br><br>
+                <label for="condition">Condition:</label>
+                <input type="text" id="condition" name="condition"><br><br>
+                <input type="submit" value="Add Patient">
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
